@@ -4,31 +4,46 @@
     <title>Zylkfar</title>
     <style>
       body {
-        background: #0d0d0d;
-        color: #ffffff;
-        font-family: Arial, sans-serif;
+        margin: 0;
+        height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100vh;
-        margin: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #2a0050, #0d0014);
+        color: #ffffff;
+        animation: fadeIn 1.2s ease-out;
       }
+
       h1 {
-        font-size: 2.5rem;
-        letter-spacing: 2px;
-        opacity: 0.9;
+        font-size: 3rem;
+        letter-spacing: 3px;
+        margin-bottom: 12px;
+        text-shadow: 0 0 12px #b57bff;
+      }
+
+      a {
+        color: #c08aff;
+        font-size: 1.2rem;
+        text-decoration: none;
+        transition: 0.3s ease;
+      }
+
+      a:hover {
+        color: #ffffff;
+        text-shadow: 0 0 10px #d3a6ff;
+      }
+
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
       }
     </style>
-    <script>
-      window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
-    </script>
-    <script defer src="/_vercel/insights/script.js"></script>
   </head>
   <body>
-    <h1>Under Construction</h1>
-    <a href="/contact.html" style="color:#9a63ff; text-decoration:none; font-size:1.2rem; margin-top:20px; display:block;">
-  Register your interest
-</a>
-
+    <div>
+      <h1>Under Construction</h1>
+      <a href="/contact.html">Register your interest</a>
+    </div>
   </body>
 </html>

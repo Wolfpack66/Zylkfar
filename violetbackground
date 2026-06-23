@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Zylkfar</title>
+    <style>
+      body {
+        background: #1a0026; /* dark violet */
+        color: #ffffff;
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        text-align: center;
+      }
+      h1 {
+        font-size: 3rem;
+        letter-spacing: 3px;
+        margin-bottom: 10px;
+      }
+      p {
+        font-size: 1.2rem;
+        opacity: 0.8;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Zylkfar</h1>
+      <p>Under Construction</p>
+    </div>
+  </body>
+</html>

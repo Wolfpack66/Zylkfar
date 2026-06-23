@@ -1,0 +1,23 @@
+{
+  "name": "zylkfar",
+  "version": "1.0.0",
+  "description": "Zylkfar - Under Construction",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wolfpack66/Zylkfar.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Wolfpack66/Zylkfar/issues"
+  },
+  "homepage": "https://github.com/Wolfpack66/Zylkfar#readme",
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1"
+  }
+}

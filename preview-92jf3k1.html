@@ -45,7 +45,7 @@
         display: flex;
         justify-content: flex-start;
         padding-left: 40px;
-        padding-top: 40px;
+        padding-top: 60px; /* moved slightly down */
       }
 
       /* HERO TEXT — distinct orange-gold gradient */
@@ -58,6 +58,7 @@
         -webkit-text-fill-color: transparent;
         text-shadow: 0 0 12px rgba(255, 140, 66, 0.4);
         max-width: 90%;
+        white-space: nowrap; /* forces 1 line */
       }
 
       /* VALUES + HINT — violet/pink gradient */
@@ -69,23 +70,29 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         text-shadow: 0 0 10px rgba(192, 138, 255, 0.4);
+        transition: 0.25s ease;
+      }
+
+      /* Hover illumination for each sentence */
+      .section-text:hover {
+        text-shadow: 0 0 18px rgba(227, 176, 255, 0.9);
+        transform: translateX(4px);
       }
 
       /* Extra spacing between Values and Hint */
       .spacer {
-        height: 40px;
+        height: 50px;
       }
 
-      /* Register block */
+      /* Register block — now frames only the letters */
       .register {
-        padding: 24px;
-        border-radius: 10px;
+        padding: 0; /* remove block padding */
         transition: 0.3s ease;
       }
 
       .register:hover {
-        box-shadow: 0 0 20px rgba(255, 255, 255, 0.35);
-        transform: translateY(-3px);
+        text-shadow: 0 0 18px rgba(227, 176, 255, 0.9);
+        transform: translateX(4px);
       }
 
       .register a {
@@ -96,6 +103,7 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         text-shadow: 0 0 10px rgba(192, 138, 255, 0.4);
+        padding: 0; /* no block around text */
       }
 
       @keyframes fadeIn {

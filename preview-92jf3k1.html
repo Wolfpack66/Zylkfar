@@ -13,7 +13,6 @@
         animation: fadeIn 1.2s ease-out;
       }
 
-      /* Brand name */
       .header {
         position: absolute;
         top: 20px;
@@ -27,28 +26,25 @@
         text-shadow: 0 0 18px rgba(255, 140, 66, 0.75);
       }
 
-      /* Layout container */
       .content {
         display: flex;
         justify-content: space-between;
         padding: 140px 60px 60px 60px;
       }
 
-      /* Left column */
       .left-column {
         width: 55%;
       }
 
-      /* Right column */
+      /* REGISTER MOVED DOWN */
       .right-column {
         width: 35%;
         display: flex;
         justify-content: flex-start;
         padding-left: 40px;
-        padding-top: 60px; /* moved slightly down */
+        padding-top: 140px; /* increased from 60px */
       }
 
-      /* HERO TEXT — distinct orange-gold gradient */
       .hero-text {
         font-size: 1.8rem;
         line-height: 1.35;
@@ -58,10 +54,9 @@
         -webkit-text-fill-color: transparent;
         text-shadow: 0 0 12px rgba(255, 140, 66, 0.4);
         max-width: 90%;
-        white-space: nowrap; /* forces 1 line */
+        white-space: nowrap;
       }
 
-      /* VALUES + HINT — violet/pink gradient */
       .section-text {
         font-size: 1.6rem;
         line-height: 1.45;
@@ -73,20 +68,17 @@
         transition: 0.25s ease;
       }
 
-      /* Hover illumination for each sentence */
       .section-text:hover {
         text-shadow: 0 0 18px rgba(227, 176, 255, 0.9);
         transform: translateX(4px);
       }
 
-      /* Extra spacing between Values and Hint */
       .spacer {
         height: 50px;
       }
 
-      /* Register block — now frames only the letters */
       .register {
-        padding: 0; /* remove block padding */
+        padding: 0;
         transition: 0.3s ease;
       }
 
@@ -103,7 +95,6 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         text-shadow: 0 0 10px rgba(192, 138, 255, 0.4);
-        padding: 0; /* no block around text */
       }
 
       @keyframes fadeIn {
@@ -119,15 +110,12 @@
 
     <div class="content">
 
-      <!-- LEFT COLUMN -->
       <div class="left-column">
 
-        <!-- HERO -->
         <p class="hero-text">
           A smarter way to grow your savings is coming soon. Allow your money to work for you.
         </p>
 
-        <!-- VALUES -->
         <p class="section-text"><strong>Smart Growth</strong> — Your savings grow automatically and effortlessly.</p>
         <p class="section-text"><strong>Always Earning</strong> — Your money never sits idle.</p>
         <p class="section-text"><strong>Simple & Transparent</strong> — No complexity, no hidden steps.</p>
@@ -135,7 +123,6 @@
 
         <div class="spacer"></div>
 
-        <!-- HINT -->
         <p class="section-text"><strong>Inspired to empower users</strong> — Gain real control over your financial growth.</p>
         <p class="section-text"><strong>Powered by a new approach to liquidity optimization</strong> — Let your cash do the work for you.</p>
         <p class="section-text"><strong>Built on institutional‑grade financial engineering</strong> — Benefit from the same precision trusted by professional finance.</p>
@@ -143,7 +130,6 @@
 
       </div>
 
-      <!-- RIGHT COLUMN -->
       <div class="right-column">
         <div class="register">
           <a href="/contact.html">Register your interest</a>

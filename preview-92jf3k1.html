@@ -44,17 +44,20 @@
         width: 35%;
         display: flex;
         justify-content: flex-start;
+        padding-left: 40px;
+        padding-top: 40px;
       }
 
       /* HERO TEXT — distinct orange-gold gradient */
       .hero-text {
         font-size: 1.8rem;
-        line-height: 1.45;
-        margin-bottom: 40px;
+        line-height: 1.35;
+        margin-bottom: 60px;
         background: linear-gradient(45deg, #ffb36b, #ff8c42);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         text-shadow: 0 0 12px rgba(255, 140, 66, 0.4);
+        max-width: 90%;
       }
 
       /* VALUES + HINT — violet/pink gradient */
@@ -68,11 +71,15 @@
         text-shadow: 0 0 10px rgba(192, 138, 255, 0.4);
       }
 
+      /* Extra spacing between Values and Hint */
+      .spacer {
+        height: 40px;
+      }
+
       /* Register block */
       .register {
         padding: 24px;
         border-radius: 10px;
-        height: fit-content;
         transition: 0.3s ease;
       }
 
@@ -82,11 +89,13 @@
       }
 
       .register a {
-        color: #ffffff;
+        font-size: 1.6rem;
         font-weight: bold;
         text-decoration: none;
-        font-size: 1.6rem;
-        text-shadow: 0 0 10px rgba(255,255,255,0.4);
+        background: linear-gradient(45deg, #e3b0ff, #c08aff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: 0 0 10px rgba(192, 138, 255, 0.4);
       }
 
       @keyframes fadeIn {
@@ -116,6 +125,8 @@
         <p class="section-text"><strong>Simple & Transparent</strong> — No complexity, no hidden steps.</p>
         <p class="section-text"><strong>Your Terms</strong> — Bring your own terms to the table.</p>
 
+        <div class="spacer"></div>
+
         <!-- HINT -->
         <p class="section-text"><strong>Inspired to empower users</strong> — Gain real control over your financial growth.</p>
         <p class="section-text"><strong>Powered by a new approach to liquidity optimization</strong> — Let your cash do the work for you.</p>
@@ -127,7 +138,7 @@
       <!-- RIGHT COLUMN -->
       <div class="right-column">
         <div class="register">
-          <a href="/contact.html">Register your interest →</a>
+          <a href="/contact.html">Register your interest</a>
         </div>
       </div>
 

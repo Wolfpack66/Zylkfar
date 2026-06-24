@@ -46,38 +46,47 @@
         justify-content: flex-start;
       }
 
-      /* Blocks */
-      .block {
-        background: #ffffff;
-        color: #000000;
-        padding: 24px;
-        border-radius: 10px;
-        margin-bottom: 30px;
-        box-shadow: 0 0 12px rgba(0,0,0,0.3);
+      /* HERO TEXT — distinct orange-gold gradient */
+      .hero-text {
+        font-size: 1.8rem;
+        line-height: 1.45;
+        margin-bottom: 40px;
+        background: linear-gradient(45deg, #ffb36b, #ff8c42);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: 0 0 12px rgba(255, 140, 66, 0.4);
       }
 
-      /* Larger text for all sentences */
-      .block p {
+      /* VALUES + HINT — violet/pink gradient */
+      .section-text {
         font-size: 1.6rem;
         line-height: 1.45;
-        margin: 12px 0;
+        margin: 18px 0;
+        background: linear-gradient(45deg, #e3b0ff, #c08aff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: 0 0 10px rgba(192, 138, 255, 0.4);
       }
 
       /* Register block */
       .register {
-        background: #ffffff;
-        color: #000000;
         padding: 24px;
         border-radius: 10px;
         height: fit-content;
-        box-shadow: 0 0 12px rgba(0,0,0,0.3);
+        transition: 0.3s ease;
+      }
+
+      .register:hover {
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.35);
+        transform: translateY(-3px);
       }
 
       .register a {
-        color: #7b3fe4;
+        color: #ffffff;
         font-weight: bold;
         text-decoration: none;
         font-size: 1.6rem;
+        text-shadow: 0 0 10px rgba(255,255,255,0.4);
       }
 
       @keyframes fadeIn {
@@ -96,33 +105,29 @@
       <!-- LEFT COLUMN -->
       <div class="left-column">
 
-        <!-- HERO BLOCK -->
-        <div class="block">
-          <p>A smarter way to grow your savings is coming soon. Allow your money to work for you.</p>
-        </div>
+        <!-- HERO -->
+        <p class="hero-text">
+          A smarter way to grow your savings is coming soon. Allow your money to work for you.
+        </p>
 
-        <!-- VALUES BLOCK -->
-        <div class="block">
-          <p><strong>Smart Growth</strong> — Your savings grow automatically and effortlessly.</p>
-          <p><strong>Always Earning</strong> — Your money never sits idle.</p>
-          <p><strong>Simple & Transparent</strong> — No complexity, no hidden steps.</p>
-          <p><strong>Your Terms</strong> — Bring your own terms to the table.</p>
-        </div>
+        <!-- VALUES -->
+        <p class="section-text"><strong>Smart Growth</strong> — Your savings grow automatically and effortlessly.</p>
+        <p class="section-text"><strong>Always Earning</strong> — Your money never sits idle.</p>
+        <p class="section-text"><strong>Simple & Transparent</strong> — No complexity, no hidden steps.</p>
+        <p class="section-text"><strong>Your Terms</strong> — Bring your own terms to the table.</p>
 
-        <!-- HINT BLOCK -->
-        <div class="block">
-          <p><strong>Inspired to empower users</strong> — Gain real control over your financial growth.</p>
-          <p><strong>Powered by a new approach to liquidity optimization</strong> — Let your cash do the work for you.</p>
-          <p><strong>Built on institutional‑grade financial engineering</strong> — Benefit from the same precision trusted by professional finance.</p>
-          <p><strong>Designed with security at the core</strong> — Stay protected while enjoying a seamless experience.</p>
-        </div>
+        <!-- HINT -->
+        <p class="section-text"><strong>Inspired to empower users</strong> — Gain real control over your financial growth.</p>
+        <p class="section-text"><strong>Powered by a new approach to liquidity optimization</strong> — Let your cash do the work for you.</p>
+        <p class="section-text"><strong>Built on institutional‑grade financial engineering</strong> — Benefit from the same precision trusted by professional finance.</p>
+        <p class="section-text"><strong>Designed with security at the core</strong> — Stay protected while enjoying a seamless experience.</p>
 
       </div>
 
       <!-- RIGHT COLUMN -->
       <div class="right-column">
         <div class="register">
-          <a href="/contact.html">Register your interest</a>
+          <a href="/contact.html">Register your interest →</a>
         </div>
       </div>
 
